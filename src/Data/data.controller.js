@@ -2,7 +2,6 @@ const { processData : serviceProcessData } = require('./data.service');
 
 const get =(req, res)=> {
     res.status(200).json({"message":"Ok"})
-
 }
 
 const processData =async(req, res)=> {

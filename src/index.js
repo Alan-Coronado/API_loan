@@ -7,6 +7,6 @@ const router = require('./routes/routes');
 const port = 3030;
 app.use(router);
 
-app.listen(port, ()=> {
+app.listen(process.env.PORT || port, ()=> {
     console.log(`listen in port ${port}`);
 });
