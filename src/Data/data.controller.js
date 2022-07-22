@@ -1,5 +1,10 @@
 const { processData : serviceProcessData } = require('./data.service');
 
+const get =(req, res)=> {
+    res.status(200).json({"message":"Ok"})
+
+}
+
 const processData =async(req, res)=> {
     try{
         const {amount, term, interest} = req.body;
@@ -16,5 +21,6 @@ const processData =async(req, res)=> {
 }
 
 module.exports = {
+    get,
     processData
 }
